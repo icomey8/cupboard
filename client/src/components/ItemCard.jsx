@@ -21,9 +21,9 @@ function ItemCard() {
 						<div className="flex flex-col w-full gap-1">
 								<CardTitle className='flex justify-between w-full'>
 									<div>Item Title</div>
-									<div>$6</div>
+									<div className='text-lg font-normal'>6 left</div>
 								</CardTitle>
-							<div className="flex gap-2 text-sm">
+							<div className="flex gap-2 text-xs">
 								<p>tags go here</p>
 							</div>
 						</div>

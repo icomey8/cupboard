@@ -35,7 +35,6 @@ function AddScreen() {
 			if (response.ok) {
 				const data = await response.json();
 				console.log("Entree added:", data);
-				// Optionally, reset the form or show a success message
 				setInputText({ entree: "", price: "" });
 			} else {
 				console.error("Failed to add entree");
