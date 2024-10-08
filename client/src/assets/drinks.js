@@ -1,11 +1,10 @@
 let drinks = {
-    "Coffee" : "☕",
-    "Tea" : "🍵",
-    "Juice" : "🥤",
-    "Boba" : "🧋",
+    Coffee: '☕',
+    Tea: '🍵',
+    Juice: '🥤',
+    Boba: '🧋',
 }
 
-export default drinks;
-
+export default drinks
 
 // store_id, drink_id, name, price, quantity
