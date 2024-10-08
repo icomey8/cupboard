@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import ItemCard from "@/components/ItemCard";
 
 function ViewScreen() {
-	const [entrees, setEntrees] = useState([]);
+	const [entrees, setEntrees] = useState([]);  // should viewScreen control state for entrees?  if not, try extracting into custom hook
 
-	const getEntrees = async () => {
+	const getEntrees = async () => {		
 		try {
 			const response = await fetch("/api/entrees");
 			const data = await response.json();
@@ -20,12 +21,10 @@ function ViewScreen() {
 
 	return (
 		<div className="flex items-center justify-center w-screen h-screen gap-3 text-white bg-[#09090b]">
-
-            <div>
+            <div className='grid grid-cols-3 grid-rows-2'>
                 {entrees.map((entree) => (
-                    <div key={entree.id}>
-                        <h2>{entree.name}</h2>
-                        <p>{entree.price}</p>
+                    <div className='flex gap-2' key={entree.id}>
+						<ItemCard name={entree.name} price={entree.price}/>
                     </div>
                 ))}
             </div>
