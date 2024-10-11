@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import ItemCard from '@/components/ItemCard'
+import ItemCard from '@/components/ui/custom/ItemCard'
 
 function ViewScreen() {
     const [entrees, setEntrees] = useState([]) // should viewScreen control state for entrees?  if not, try extracting into custom hook

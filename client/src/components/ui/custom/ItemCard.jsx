@@ -4,7 +4,7 @@ import {
     CardContent,
     CardTitle,
     CardFooter,
-} from './BasicCard.jsx'
+} from '../default/card.jsx'
 
 import entrees from '@/assets/entrees.js'
 
@@ -28,7 +28,7 @@ function ItemCard({ name, price }) {
                                 </div>
                             </CardTitle>
                             <div className="flex gap-2 text-xs">
-                                <p>tags go here</p>
+                                <p>tags go here (use shadcn badges)</p>
                             </div>
                         </div>
                     </CardFooter>
