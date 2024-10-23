@@ -6,9 +6,11 @@ import {
     CardFooter,
 } from '../default/card.jsx'
 
-import entrees from '@/assets/entrees.js'
+import { Badge } from '../default/badge.jsx'
 
-function ItemCard({ name, price }) {
+function ItemCard({ type, name, price }) {
+    const badgeText = type === 'entrees' ? 'Entree' : 'Drink';
+    
     return (
         <>
             <div className="min-w-72">
@@ -16,7 +18,7 @@ function ItemCard({ name, price }) {
                     <CardHeader></CardHeader>
                     <CardContent className="flex flex-col justify-center h-36">
                         <div className="flex justify-center">
-                            <h1 className="text-4xl">{entrees[name]}</h1>
+                            <h1 className="text-4xl">{type[name]}</h1>
                         </div>
                     </CardContent>
                     <CardFooter>
@@ -28,7 +30,7 @@ function ItemCard({ name, price }) {
                                 </div>
                             </CardTitle>
                             <div className="flex gap-2 text-xs">
-                                <p>tags go here (use shadcn badges)</p>
+                                <Badge>{badgeText}</Badge>
                             </div>
                         </div>
                     </CardFooter>

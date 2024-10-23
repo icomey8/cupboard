@@ -23,8 +23,8 @@ const frameworks = [
     label: "Croissant",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "bagel",
+    label: "Bagel",
   },
   {
     value: "nuxt.js",

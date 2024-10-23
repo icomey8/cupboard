@@ -18,19 +18,14 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex gap-6">
-                    <Link to="/add">
+                    <Link to="/update">
                         <div className="border-b-2 border-transparent hover:border-b-[#3c82f6]">
-                            Add
+                            Update
                         </div>
                     </Link>
                     <Link to="/view">
                         <div className="border-b-2 border-transparent hover:border-b-[#3c82f6]">
                             View
-                        </div>
-                    </Link>
-                    <Link to="/view">
-                        <div className="border-b-2 border-transparent hover:border-b-[#3c82f6]">
-                            Delete
                         </div>
                     </Link>
                 </div>
