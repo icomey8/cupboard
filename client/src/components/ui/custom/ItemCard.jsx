@@ -5,11 +5,14 @@ import {
     CardTitle,
     CardFooter,
 } from '../default/card.jsx'
-
 import { Badge } from '../default/badge.jsx'
+import entrees  from '@/assets/entrees.js'
+import drinks  from '@/assets/drinks.js'
+import desserts from '@/assets/desserts.js'
 
 function ItemCard({ type, name, price }) {
-    const badgeText = type === 'entrees' ? 'Entree' : 'Drink';
+    const badgeText = type === 'entrees' ? 'Entree' : type === 'drinks' ? 'Drink' : 'Dessert';
+    const category = type === 'entree' ? entrees : type === 'drink' ? drinks : desserts;
     
     return (
         <>
@@ -18,7 +21,7 @@ function ItemCard({ type, name, price }) {
                     <CardHeader></CardHeader>
                     <CardContent className="flex flex-col justify-center h-36">
                         <div className="flex justify-center">
-                            <h1 className="text-4xl">{type[name]}</h1>
+                            <h1 className="text-4xl">{category[name]}</h1>
                         </div>
                     </CardContent>
                     <CardFooter>

@@ -11,13 +11,13 @@ export async function getAllDrinks(fastify) {
 }
 
 export async function getAllStores(fastify) {
-    const query = 'SELECT * FROM stores'
+    const query = 'SELECT * FROM store'
     const { rows } = await fastify.query(query)
     return rows
 }
 
 export async function getAllDesserts(fastify) {
-    const query = 'SELECT * FROM desserts'
+    const query = 'SELECT * FROM dessert'
     const { rows } = await fastify.query(query)
     return rows
 }

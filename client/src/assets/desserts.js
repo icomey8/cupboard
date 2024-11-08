@@ -1,7 +1,7 @@
 let desserts = {
     Cookie: '🍪',
     Fruit: '🍎',
-    Cake: '🍰',
+    Cheesecake: '🍰',
     Cupcake: '🧁',
     'Ice Cream': '🍦',
     Chocolate: '🍫',
